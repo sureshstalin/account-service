@@ -24,6 +24,10 @@ public class TestController {
     @Autowired
     private SystemCodeConfiguration systemCodeConfiguration;
 
+    @GetMapping
+    public String defaultEndPoint() {
+        return "This is from Account Service";
+    }
     @GetMapping("/log")
     public ResponseEntity<Void> logTest()  {
         log.info("This is test log1");
