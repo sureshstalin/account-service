@@ -26,7 +26,7 @@ public class TestController {
 
     @GetMapping
     public String defaultEndPoint() {
-        return "This is from Account Service";
+        return "Account Service is up and running";
     }
     @GetMapping("/log")
     public ResponseEntity<Void> logTest()  {
